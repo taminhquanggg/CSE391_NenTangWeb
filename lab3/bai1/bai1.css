@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    line-height: inherit;
+    color: #000;
+}
+
+html {
+    word-spacing: 1px;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
