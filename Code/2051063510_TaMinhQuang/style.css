@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    margin: 50px 150px 0 150px;
+}
+
+.header {
+    display: flex;
+}
+
+.header-left {
+    
+    justify-content: center;
+}
+
+.header-right {
+    margin-left: 5px;
+    margin-right: -5px;
+    justify-content: left;
+    
+}
+
+/* Khoảng cách bên trái bằng ngày sinh nhân 2 */
+.header-right p{
+    padding-left: 4px;
+}
+
+.header-left,
+.header-right {
+    /* Mã hex là ngày sinh đổi sang mã HEX: 203A02 */
+    background-color: #203A02;
+    display: flex;
+    align-items: center;
+    line-height: 100%;
+    padding-top: 10px !important;
+    font-size: 18px;
+    color: #fff;
+}
+
+.main-content {
+    margin-top: 10px !important; 
+}
+
+.main-content .input-content {
+    width: 100%;
+    border: 2px dotted ;
+}
+
+.table-content {
+    width: 100%;
+    margin-top: 10px !important; 
+}
+
+.table-content, .table-content tr, .table-content td, .table-content th {
+    border: 1px solid;
+    padding: 8px 4px 2px 4px;
+}
+
+.main-right {
+    margin-left: 5px;
+    margin-right: -5px;
+    border: 1px solid #ccc;
+    padding-top: 10px !important;
+    margin-top: -10px !important;
+    padding-bottom: 10px;
+}
+
+.content-1, .content-2,
+.content-3, .content-4,
+.content-5, .content-6,
+.content-7, .content-8 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.main-right-content label {
+    font-weight: 700;
+}
+  

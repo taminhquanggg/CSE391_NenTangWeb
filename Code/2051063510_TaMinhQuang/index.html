@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2051063510 - Tạ Minh Quang</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header row">
+            <div class="header-left col-md-8 col-sm">
+                <p class="header-left-text">DANH SÁCH XE OTO</p>
+            </div>
+            <div class="header-right col-md-4 col-sm">
+                <p class="header-right-text">THÔNG TIN VỀ XE OTO</p>
+            </div>
+        </div>
+
+        <div class="main-content row">
+            <div class="main-left col-md-8 col-sm">
+                <input type="text" placeholder="Tìm kiếm" class="input-content">
+                <table class="table-content">
+                    <tr class="table-tr">
+                      <th>STT</th>
+                      <th>Hình Ảnh</th>
+                      <th>Tên Xe</th>
+                      <th>Hãng Xe</th>
+                      <th>Giá tiền</th>
+                      <th>Người liên hệ</th>
+                      <th>Điện thoại</th>
+                      <th>Email</th>
+                    </tr>
+                    <tr class="table-tr body-table">
+                      
+                    </tr>
+                    
+                  </table>
+            </div>
+            <div class="main-right col-md-4 col-sm">
+                <div class="main-right-content">
+                    <div class="content-1">
+                        <label for="">Tên xe *:</label>
+                        <input type="text" id="inp-name">
+                    </div>
+                    <div class="content-2">
+                        <label for="">Hình ảnh *:</label>
+                        <input type="text" id="inp-img">
+                    </div>
+                    <div class="content-3">
+                        <label for="">Hãng xe *:</label>
+                        <select name="cars" id="cars">
+                            <optgroup label="Swedish Cars">
+                              <option value="volvo">Volvo</option>
+                              <option value="saab">Saab</option>
+                            </optgroup>
+                            <optgroup label="German Cars">
+                              <option value="mercedes">Mercedes</option>
+                              <option value="audi">Audi</option>
+                            </optgroup>
+                          </select>
+                    </div>
+                    <div class="content-4">
+                        <label for="">Giá tiền *:</label>
+                        <input type="number" id="price" name="quantity" min="0">
+                    </div>
+                    <div class="content-5">
+                        <label for="">Mô tả *:</label>
+                        <textarea name="" id="about" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="content-6">
+                        <label for="">Người liên hệ *:</label>
+                        <input type="text" id="people">
+                    </div>
+                    <div class="content-7">
+                        <label for="">Số điện thoại liên hệ *:</label>
+                        <input type="text" id="phone">
+                    </div>
+                    <div class="content-8">
+                        <label for="">Email *:</label>
+                        <input type="text" id="email">
+                    </div>
+                    <div class="content-9">
+                        <button type="button" class="btn-save btn-success">Lưu</button>
+                        <button type="button" class="btn-del btn-danger">Xóa</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+    const name = document.querySelector('#inp-name')
+    const pic = document.querySelector('#inp-img')
+    const brand = document.querySelector('#cars')
+    const price = document.querySelector('#price')
+    const note = document.querySelector('#about')
+    const contact = document.querySelector('#people')
+    const number = document.querySelector('#phone')
+    const email = document.querySelector('#email')
+    const savebtn = document.querySelector('.btn-save')
+    const delbtn = document.querySelector('.btn-del')
+    let carList = []
+    savebtn.addEventListener('click', () => {
+        document.querySelector('.body-table').innerHTML = ` 
+        <td>1</td> 
+        <td>${name.value}</td> 
+    <td>${pic.value}</td> 
+    <td>${brand.value}</td> 
+    <td>${price.value}</td> 
+    <td>${note.value}</td>
+    <td>${contact.value}</td>
+    <td>${number.value}</td>
+    <td>${email.value}</td> `
+    })
+</script>
+
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
